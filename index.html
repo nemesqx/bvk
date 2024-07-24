@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BVK Property Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #F2F1EE;
+            font-family: 'Roboto', sans-serif;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        .container {
+            text-align: center;
+        }
+        .logo {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            opacity: 0;
+            animation: fadeIn 1s 0.5s forwards;
+        }
+        .coming-soon {
+            margin-top: 20px;
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #333;
+            opacity: 0;
+            animation: fadeIn 1s 1s forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./logo.png" alt="Logo" class="logo">
+    </div>
+</body>
+</html>
