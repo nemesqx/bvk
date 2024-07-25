@@ -13,6 +13,11 @@
     <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#F2F1EE">
     <style>
+        a[href^="tel"]{
+            color: inherit;
+            text-decoration: none;
+        }
+
         html, body {
             margin: 0;
             padding: 0;
@@ -31,15 +36,17 @@
             align-items: center;
         }
         .logo {
-            width: 25vw;
+            width: 40vw; /* Increased logo size */
             height: auto;
             opacity: 0;
             animation: fadeIn 1s 0.5s forwards;
         }
         .arrow {
-            margin-top: 20px;
-            font-size: 2rem;
+            position: absolute;
+            bottom: 20px; /* Ensure arrow is at the bottom of the container */
+            font-size: 3rem; /* Increased font size for the arrow */
             cursor: pointer;
+            color: #000;
             animation: fadeIn 1s 1s forwards;
         }
         .scroll-down {
@@ -56,16 +63,16 @@
             animation: fadeIn 1s 1.5s forwards;
         }
         .contact-info div {
-            margin: 10px 0;
+            margin: 5px 0; /* Reduced margin */
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.1rem;
+            font-size: 0.9rem; /* Reduced font size */
             color: #333;
             transition: transform 0.5s ease;
         }
         .contact-info img {
-            margin-right: 10px;
+            margin-right: 8px; /* Reduced margin */
         }
         .content {
             padding: 20px;
