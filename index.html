@@ -13,11 +13,6 @@
     <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#F2F1EE">
     <style>
-        a[href^="tel"]{
-            color: inherit;
-            text-decoration: none;
-        }
-
         html, body {
             margin: 0;
             padding: 0;
@@ -25,6 +20,7 @@
             background-color: #F2F1EE;
             font-family: 'Roboto', sans-serif;
             scroll-behavior: smooth;
+            overflow-x: hidden;
         }
         .container {
             text-align: center;
@@ -36,25 +32,23 @@
             align-items: center;
         }
         .logo {
-            width: 40vw; /* Increased logo size */
+            width: 40vw; /* Larger logo size */
+            max-width: 400px; /* Max size for larger screens */
             height: auto;
             opacity: 0;
             animation: fadeIn 1s 0.5s forwards;
         }
         .arrow {
             position: absolute;
-            bottom: 20px; /* Ensure arrow is at the bottom of the container */
-            font-size: 3rem; /* Increased font size for the arrow */
+            bottom: 20px; /* Ensure arrow is at the bottom */
+            font-size: 2.5rem; /* Larger arrow */
             cursor: pointer;
-            color: #000;
             animation: fadeIn 1s 1s forwards;
+            color: #000;
         }
         .scroll-down {
-            position: absolute;
-            bottom: 20px;
-            cursor: pointer;
             color: #000;
-            font-size: 2rem;
+            font-size: 2.5rem; /* Larger arrow */
         }
         .contact-info {
             margin-top: 20px;
@@ -63,11 +57,11 @@
             animation: fadeIn 1s 1.5s forwards;
         }
         .contact-info div {
-            margin: 5px 0; /* Reduced margin */
+            margin: 5px 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.9rem; /* Reduced font size */
+            font-size: 0.9rem; /* Smaller font size */
             color: #333;
             transition: transform 0.5s ease;
         }
@@ -98,7 +92,7 @@
         }
         @media (max-width: 600px) {
             .logo {
-                width: 50vw; /* Adjust logo size for smaller screens */
+                width: 60vw; /* Adjust logo size for smaller screens */
             }
         }
     </style>
@@ -108,15 +102,15 @@
         <img src="./logo.png" alt="Logo" class="logo">
         <div class="contact-info">
             <div>
-                <img src="./phone.png" alt="Phone Icon" width="24" height="24">
+                <img src="./phone.png" alt="Phone Icon" width="20" height="20">
                 <span>+355 695637588</span>
             </div>
             <div>
-                <img src="./mail.png" alt="Email Icon" width="24" height="24">
+                <img src="./mail.png" alt="Email Icon" width="20" height="20">
                 <span>contact@bvk.al</span>
             </div>
             <div>
-                <img src="./location.png" alt="Location Icon" width="24" height="24">
+                <img src="./location.png" alt="Location Icon" width="20" height="20">
                 <span>Tirana, Albania</span>
             </div>
         </div>
