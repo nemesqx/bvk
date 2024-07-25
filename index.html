@@ -13,15 +13,18 @@
     <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
     <style>
-        body {
+        html, body {
             margin: 0;
             padding: 0;
+            height: 100%;
+            background-color: #F2F1EE;
+            font-family: 'Roboto', sans-serif;
+        }
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #F2F1EE;
-            font-family: 'Roboto', sans-serif;
+            min-height: 100vh;
             opacity: 0;
             animation: fadeIn 1s forwards;
         }
@@ -52,6 +55,7 @@
 <body>
     <div class="container">
         <img src="./logo.png" alt="Logo" class="logo">
+        <div class="coming-soon">Coming Soon</div>
     </div>
 </body>
 </html>
